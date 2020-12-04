@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FINIKO - Ориентир Вашего Успеха !</title>
+    <link rel="icon" type="image/png" href="324.png">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <style type="text/css">
+      html 
+      {
+        scroll-behavior: smooth; 
+      }
+      body
+      {
+        background-color: #fff;
+      }
+      .container
+      {
+        text-align: center;
+        height: 100%;
+        z-index: 1;
+        position: relative;
+        background-color: white;
+        max-width: 1980px;
+      }
+      .container-fluid  
+      {
+        margin-top: 70px;
+        text-align: center;
+        height: 100%;
+        z-index: 1;
+        position: relative;
+      }
+      .navwbar
+      {
+        z-index: 2;
+        position: fixed; 
+        top: 0px;   
+        width: 100%;
+        opacity: 0.9;
+        background-color: white;
+        height: 70px;
+        color: black;
+        text-align: center;
+      }
+      #yes
+      {
+        padding-top: 130px;
+        color:white;
+        box-sizing: border-box;
+        font-size: 2em;
+      }
+      video
+      {
+        margin-top: 30px; 
+      }
+      button  
+      {
+        font-family: Regular 400;
+        height: 30px;
+        text-align: center;
+        border:2px solid #28324D;
+        border-radius: 5px;
+        background-color: #28324D;
+        color: white;
+        font-size: 0.9em;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      button:hover
+      {
+        background-color: #22263b;
+      }
+      button 
+      {
+        font-family:Lato, sans-serif; 
+        font-size: 1em;
+        color: white;
+      }
+      button:hover
+      {
+        color:white;
+        text-decoration: none;
+      }
+      nav ul  
+      {
+        text-align: center;
+        padding: 20px;
+      }
+      nav ul li
+      {
+        margin-left: 20px;
+      }
+      h3
+      {
+        line-height: 0.7;
+        color: #03198C;
+      }
+      figcaption
+      {
+        color: #110572;
+        font-size: 1em;
+        font-family: Regular 400 Bold 700;
+      }
+      #oh img
+      {
+        margin-top: 50px;
+        margin-right: 50px;
+      }
+      .klop
+      {
+        width: 100px;
+      }
+      #particles-js
+      {
+        background-color: #0B0B48;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin-top: 70px;
+        position: fixed;
+        z-index: 0;
+      }
+      #About
+      {
+        background-color: white;
+        margin-top: 30px;
+        height: 100%;
+      }
+      #About div 
+      {
+        display: block;
+        padding-top: 40px;
+      }
+      #Never
+      {
+        margin-top: 0px;
+        height: 100%;
+        text-align: center;
+        background-color: #0B0B48;
+      }
+      #Kurga
+      {
+        margin-top: 0px;
+        background-color: white;
+      }
+      .thumbnail .r
+      {
+        width: 14em;    
+        float: left;
+      }
+      .thumbnail
+      {
+        text-decoration: none;
+        display: inline-box;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #1D1363;
+      }
+      .thumbnail p
+      {
+        font-size: 0.8em;
+        color:gray;
+        width:17em;
+        text-align: center;
+        font-weight: normal;
+        opacity: 0.9;
+      }
+      .thumbnail img
+      {
+        margin-bottom: 50px;
+      }
+      .zagalovok
+      {
+        color: #B2B2C5;
+        font-size: 2.4em;
+      }
+      .zagalovok:hover
+      {
+        text-decoration: none;
+        color: #B2B2C5;
+        cursor: auto;
+      }
+      #Never table td
+      {
+        padding-right: 50px;
+      }
+      #kaktak
+      {
+        display: block;
+      }
+      #nuda
+      {
+        font-size: 2.4em;
+        color: #635C93;        
+      }
+      #nuda:hover
+      {
+        text-decoration: none;
+        cursor: auto;
+      }
+      #Kurga
+      {
+        padding-top: 30px;
+        height: 100%;
+      }
+      #lol
+      {
+        border-radius: 20em;
+        width: 1140px;
+        border:6px solid #4F16BC;
+      }
+      #amaga
+      {
+        width: 200px;
+      }
+      #natpis
+      {
+        padding-left: 30px;
+      }
+      #natpis a
+      {
+        font-weight: bold;
+      }
+      #natpis p 
+      {
+        font-size: 1.2em;
+        color: gray;
+        opacity: 0.8;
+        text-align: left;
+      }
+      #natpis li
+      {
+        font-size: 1.2em;
+        color: gray;
+        opacity: 0.8;
+        text-align: left;
+      }
+      #natpis li::marker 
+      {
+        content: "*";
+      }
+      #FullInform
+      {
+        background-color: #E25440;
+        border:1px solid #E25440;
+        font-size: 1.7em;
+        height: 56px;
+        margin-bottom:1em; 
+      }
+      #FullInform:hover
+      {
+        background-color: #d3503e;
+      }
+      #FullInform2
+      {
+        background-color: #2C7EC9;
+        color: white;
+        font-size: 1em;
+        height: 30px;
+        border:1px solid #2C7EC9;
+        margin-bottom:1em;
+      }
+      #FullInform2:hover
+      {
+        background-color: white;
+        color: #2C7EC9;
+        border:1px solid white;
+      }
+      #tinkof:hover
+      {
+        text-decoration: none;
+      }
+      .links
+      {
+        color:#9672DA;
+        text-decoration: underline;
+      }
+      .links:hover
+      {
+        color:#9672DA;
+      }
+      #kle
+      {
+        margin-top: 0;
+        padding-top: 50px;
+        height: 100%;
+        background-color: white;
+        text-align: center;
+      }
+      #calculate
+      {
+        height: 100%;
+        align-self: center;
+        background-color: #E2F3F2;
+        top: 0;
+        position: absolute;
+        z-index: 4;
+      }
+      #ohu
+      {
+        color: white;
+        font-size: 2em;
+        margin-top: 15px;
+        margin-bottom: 0px;
+      }
+      #mda p
+      {
+        text-align: left;
+        color: white;
+        font-size: 1.4em;
+      }
+      #mda table
+      {
+        width: 1140px;
+      }
+      #otzivi
+      {
+        margin-top: 0;
+        height: 100%;
+        background-color: #DAE9F1;
+      }
+      #otzivi p
+      {
+        color: #004A80;
+        padding: 10px;
+        font-size: 2.5em;
+      }
+      .movie
+      {
+        padding: 20px;
+        margin-top: 0;
+      }
+      #Regist
+      {
+        height: 50px;
+        width: 300px;
+        font-size: 1.5em;
+        background-color: #28324D;
+        margin-bottom: 30px;
+      }
+      #more
+      {
+        background-color:#D14B42;
+        border:1px solid #D14B42;
+        font-size: 1.2em;
+        height: 40px;
+        padding: 5px; 
+        width: 550px;
+        margin-bottom: 30px;
+      }
+      #otveti
+      {
+        margin-top: 0;
+        background-color: #010127;
+        height: 100%;
+      }
+      #otveti p
+      {
+        color: white;
+        padding-top:80px; 
+        font-size: 2em;
+      }
+      .accordion__button
+      {
+        text-transform: uppercase;
+        font-weight: bold; 
+        display: block;
+        width: 100%;
+        padding: 15px;
+        height: 100%; 
+        border:1px solid gray;
+        outline: none;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        text-align: left;
+        transition: background 0.2s;
+      }
+      .accordion__button::after
+      {
+        content: '\25be';
+        float: right;
+        transform: scale(1.5);
+      }
+      .accordion__button--active
+      {
+        background-color: gray;
+        color: white;
+      }
+      .accordion__button--active::after
+      {
+        content: '\25b4';
+      }
+      .accordion__content
+      {
+        overflow: hidden;
+        max-height: 0;
+        font-size: 8px;
+        padding-left:20px;
+        padding-top:0px; 
+        transition: max-height 0.2s;
+        border-radius: 2px;
+
+        font-family: sans-serif;
+        background: white;
+      }
+      #mho
+      {
+        width: 1144px;
+
+      }
+      #mho td
+      {
+        padding-top: 10px;
+      }
+      #doki
+      {
+        text-align: center;
+        margin-top: 0px;
+        height: 100%;
+        padding: 10px;
+        background:linear-gradient(to bottom, #DAE9F1 70%, #A4B3F5,#1526EE) ;
+      }
+      #doki table
+      {
+        width: 1280px;
+      }
+      #doki table td
+      {
+        padding-top:50px;
+        padding-right: 70px;
+        padding-left: 70px;
+      }
+      #doki table td button
+      {
+        padding: 6px;
+        font-size: 1.6em;
+        height: 100%;
+      }
+      #sho
+      {
+        width: 700px;
+        margin-top: 10px;
+        text-align: left;
+        border:4px solid #7A9EB8;
+      }
+      .tolkatk 
+      {
+        margin-top: 50px;
+      }
+      #sho tr td
+      {
+        font-size: 1.2em;
+        padding: 0px;
+        padding-left: 30px;
+        width: 10%;
+        vertical-align: top;
+      }
+      #kotaktis img
+      {
+        margin-left: 10px;
+      }
+      #footer
+      {
+        height: 1vh;
+        margin-top: 10px;
+        padding-bottom: 30px;
+        vertical-align: middle;
+      }
+      #footer button
+      {
+        margin-left: 12px;
+      }
+      .omg
+      {
+
+      }
+    </style>
+  </head>
+    <body >     
+    <div >
+      <nav class ="navwbar" >
+            <ul class="nav justify-content-center">
+              <li>
+                <a href="#history"><button value="Home">
+                 История FINIKO 
+                </button></a>
+              </li>
+              <li>
+                <a href="#Programs"><button value="About">
+                  Программы 
+                </button></a>
+              </li>
+              <li >
+                <a href="#otziviki"><button value="Regis">
+                  Отзывы
+                </button></a>
+              </li>
+              <li>
+                <a href="#kontaktiki"><button value="Regis">
+                  Мои контакты
+                </button></a>
+              </li>
+              <li>
+                <a href="#otvetinavoprosi"><button value="Regis">
+                  Ответы на вопросы
+                </button></a>
+              </li>
+            </ul> 
+          </nav> 
+          <div id="particles-js">
+          </div>    
+          <script type="text/javascript" src="particles.js"></script>
+          <script type="text/javascript" src="app.js"></script> 
+            <header class="container-fluid" id="kaktak"> 
+            <div id="oh">
+              <table align="center">
+                <tr>
+                  <td>
+                    <img src="412432.png" alt="" width="200">
+                  </td>
+                  <td id ="uh">
+                    <p id= "yes">Занимайся чем хочешь, а деньги должны быть !</p>
+                  </td>
+                </tr>            
+              </table>          
+            </div>
+              <iframe width="700" height="400" style="margin-top: 30px;" src="https://www.youtube.com/embed/XHg9xtNMilc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   </div>
+          </header> 
+        <section class="container-fluid" id="About">
+          <div class="container">
+            <div >
+            <h3>  
+              Наша миссия -
+            </h3>
+             <h3>
+               решение Ваших задач :
+            </h3> 
+          </div>
+          <div align="center">
+              <ins class="thumbnail">
+                   <div class="r">
+                   <img src="4321212.png" width="170" height="170" alt="Фолдерикс" /><br/>
+                   Недвижимость и авто<br/>
+                   <p align="center">Покупка любой недвижимости и авто  за 35% от продажной стоимости (без банков и ипотечной кабалы) </p>
+                </div>
+              </ins>
+              <ins class="thumbnail">
+                   <div class="r">
+                   <img src="palec.png" width="170" height="170" alt="Фолдерикс" /><br />
+                   Закрытие долгов<br />
+                   <p align="center">Погашение кредитов/займов (и других долговых обязательств) за 35% от остатка за 10 месяцев </p>
+                </div>
+              </ins>
+              <ins class="thumbnail">
+                   <div class="r">
+                   <img src="ruki.png" width="190"  height="170" alt="Фолдерикс" /><br />
+                   Кэшбек-сервис с возвратом от 15 до 25%<br/>
+                   <p align="center">Кэшбек-сервис с начальным кэшбеком 15% (до 25%) на ВСЕ (продукты питания в любом супермаркете, любые АЗС, аптеки, авиабилеты, также платежи по ИПОТЕКЕ и кредитам, итд) </p>
+                </div>
+              </ins>
+              <ins class="thumbnail">
+                   <div class="r">
+                   <img src="money.png" width="150" height="170" alt="Фолдерикс"/><br />
+                   Инвестиции<br/>
+                   <p align="center">Увеличение Вашего капитала с доходностью 20-22% в месяц, с ежедневным выводом процентов </p>
+                </div>
+              </ins>
+          </div>
+          </div>
+        </section>
+       <section class="container-fluid" id="Never" name="history">
+            <a href="" name="history" class="zagalovok">
+               История успеха компании Finiko 
+            </a></br>
+            <div style="padding-bottom: 70px;">
+              <table align="center">
+                <tr>
+                  <td>
+                    <img src="342453.png" style="text-align: left; margin-top:10px;" width="550">
+                  </td>
+                  <td style="width: 500px;text-align: left; font-size: 1.273em; color: white; font-family: Lato, sans-serif;">
+                    <p style="color: white;">Рождение компании Finiko началось с того, что Кирилл Доронин, создатель компании "Финико", волей судьбы встретив талантливых трейдеров, приумножал свой капитал и делал это с большим успехом. Его друзья, увидев результаты стали просить взять их деньги в управление, а чуть позже друзья друзей. Так и появилась идея создать платформу, с помощью которой каждый желающий мог бы дать свои средства в управление профессионалам. 
+                    </p>
+                    <p>
+                      На данный момент компания в стадии развития и расширения, в ней работает штат трейдеров, каждый из которых торгует одним рыночным инструментом. За счет того, что все они торгуют на разных инструментах, это позволяет диверсифицировать риски и всегда торговать только в плюс делая в среднем +50-60% к депозиту в месяц. Да, звучит не реально, но это действительно возможно на определенных рыночных инструментах.
+                    </p> 
+                    <p>
+                      Имея благие намерения, компания придумала интересный маркетинговый ход, чтобы как можно больше капитализировать средств в свое управление. На сегодняшний день, основная потребность людей в том, чтобы закрыть кредиты, ипотеки, купить хорошую машину, квартиру, дом. И компания "Финико" помогает своим клиентам решать эти вопросы достаточно быстро, а взамен получает благодарных клиентов и увеличение капитализации, и как следствие рост доходности.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-top: 20px; padding-right: 30px;">
+                    <iframe width="600" height="400" src="https://www.youtube.com/embed/6aih26QnF0c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </td>
+                  <td style="padding-top: 20px;">
+                    <iframe width="600" height="400" src="https://www.youtube.com/embed/BYJyuxwnDzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </td>
+                </tr>
+              </table>
+            </div>
+        </section>
+       <section class="container-fluid" id="Kurga">
+            <a name="Programs" id="nuda">Компания Finiko предлагает 7 продуктов:</a>
+              <table align="center" id="lol" >
+                <tr>
+                  <td id="amaga" align="center">    
+                    <img src="passMoney.png" alt="" style="text-align: left; border-radius: 10px;width: 350px;padding-left: 1em;">
+                  </td>
+                  <td id="natpis">
+                    <a style="font-size: 1.6em;text-decoration: none;color: #554E8A;font-weight: bold;top:10px; a:href{text-decoration:none;cursor: auto;}">1. Продукт "ИНДЕКС CTI"</a>
+                    <p style="margin-top: 1em;">Минимальный депозит от 3000$. </p>
+                    <p>Ввод и вывод депозита в биткоинах и USDT. </p>
+                    <p><a>КАК это работает ?</a></p>
+                    <p ><a>1 шаг.</a> <a href="https://thefiniko.com/r/174173" target="_blank"class="links">Регистрируетесь в Финико</a>, оформляете профиль и отправляете данные на верификацию  <a target="_blank"href="https://www.youtube.com/watch?v=snHtzawsAC4" class="links">(инструкция)</a></p>
+                    <p ><a>2 шаг.</a> Пополняете баланс в личном кабинете <a target="_blank"href="https://www.youtube.com/watch?v=2F26LkDAqm0" class="links">(инструкция)</a></p>
+                    <p ><a>3 шаг.</a> Покупаете индекс CTI в личном кабинете <a target="_blank"href="https://www.youtube.com/watch?v=cNnhzX9In5Q" class="links">(инструкция)</a></p>
+                    <p ><a>4 шаг.</a> Получаете прибыль с депозита 1,0-1,2 % в ДЕНЬ каждый рабочий день с ПН по ПТ. Проценты можно выводить КАЖДЫЙ день, сумма вывода от 100$</p>
+                    <p><a>Пример:</a></p>
+                    <p>Вы завели 3000$ на депозит. Через 3 дня вам начинают начислять проценты. Почему через 3 дня? Это время компания размещает ваш депозит на своих биржевых счетах, чтобы запустить в работу. Проценты можно выводить от 100$. Вывод тела депозита можно заказать в любой момент,  компания вернет его вам на 21 рабочий день со дня вывода.</p>
+                    <iframe style="margin-bottom: 50px;"width="720" height="405" src="https://www.youtube.com/embed/rSVfCZS0y34" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </td>
+                </tr>
+              </table>
+            <a style="padding: 4px"></a>
+        </section>
+        <section class="container-fluid" id="Kurga">
+              <table align="center" id="lol">
+                <tr>
+                  <td id="amaga" align="center">    
+                    <img src="germanshop.png" alt="" style="text-align: left; border-radius: 10px;width: 350px;padding-left: 1em;">
+                  </td>
+                  <td id="natpis">
+                    <a style="font-size: 1.6em;text-decoration: none;color: #554E8A;font-weight: bold;top:10px; a:href{text-decoration:none;cursor: auto;}">2. Продукт "Кэшбек сервис"</a>
+                    <p style="margin-top: 1em;"><a>Как это работает?</a> </p>
+                    <p><a>1 шаг. <a target="_blank" href="https://thefiniko.com/r/174173" class="links">Регистрируетесь в Финико</a> , оформляете профиль и отправляете данные на верификацию  <a href="https://www.youtube.com/watch?v=snHtzawsAC4" target="_blank"class="links">(инструкция)</a></a> </p>
+                    <p><a>2 шаг.</a> В личном кабинете, в разделе "Кэшбек сервис",  вносите сумму депозита (минимальная сумма депозита - 100$, максимальная - 1000000$). На этот депозит получаете ежедневно прибыль в размере 6% в месяц (72% годовых). </p>
+                    <p ><a>3 шаг.</a> Прикрепляете чеки на любые покупки (в том числе платежи по ипотеке и кредитам, платежи по ЖКХ) и получаете на эти суммы кэшбек от 15% до 25% (базовая процентная ставка по кэшбеку - 15%, увеличение ставки зависит от вашего карьерного статуса). </p>
+                    <ul style="text-align: left;">
+                      <li>
+                        Кэшбек сервис работает по всему миру. 
+                      </li>
+                      <li>
+                        Возврат живыми деньгами.
+                      </li>
+                      <li>
+                        Кэшбек начисляется равными частями ежедневно в течение 150 дней.
+                      </li>
+                      <li>
+                        Если нет депозита - нет кэшбэка, нет процентов на депозит.
+                      </li>
+                      <li>
+                        Какие чеки можно загружать - фискальный, выписка из банка, скриншот из приложения банка.
+                      </li>
+                      <li>
+                        Что нельзя загружать - банковский перевод, товарный чек, приходник.  
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            <a style="padding: 4px"></a>
+        </section>
+        <section class="container-fluid" id="Kurga">
+              <table align="center" id="lol">
+                <tr>
+                  <td id="amaga" align="center">    
+                    <img src="Uleti.png" alt="" style="text-align: left; border-radius: 10px;width: 350px;padding-left: 1em;">
+                  </td>
+                  <td id="natpis">
+                    <a style="font-size: 1.6em;text-decoration: none;color: #554E8A;font-weight: bold;top:10px; a:href{text-decoration:none;cursor: auto;}">3. Продукт "ZK35"</a>
+                    <p style="margin-top: 1em;">Данная программа позволяет закрыть любую задолженность - кредит, ипотеку (в том числе просроченную задолженность), долги перед физическими лицами, налоговые долги итд - <a>за 35% от остатка долга.</a> </p>
+                    <p>КАК это работает ? </p>
+                    <p><a>1 шаг. </a><a target="_blank"href="https://thefiniko.com/r/174173" class="links">Регистрируетесь в Финико</a>, оформляете профиль и отправляете данные на верификацию<a target="_blank"href="https://www.youtube.com/watch?v=snHtzawsAC4" class="links">(инструкция)</a>   </p>
+                    <p ><a >2 шаг.</a> Узнаете остаток задолженности по кредиту (долгу))</a></p>
+                    <p ><a >3 шаг.</a> Заключаете договор с компанией «Финико»</p>
+                    <p ><a >4 шаг.</a> Вносите в компанию 35% +1% (офисный сбор) + 10000р (за обслуживание по договору).</a></p>
+                    <p ><a >5 шаг.</a> Ваш кредит (долг) закрывает компания за 10 месяцев.</p>
+                    <p><a>Пример:</a></p>
+                    <p>Остаток по кредиту 500 000р. Внесли 35% от остатка - 175 000Р + 5 000Р (офисный сбор 1%) + 10 000Р (за обслуживание в год). Раз в месяц (за 3-5 дней до платежа кредита) в течение 10 месяцев компания начисляет на ваш кошелек в личном кабинете по 30% от суммы взноса = 52 500Р, таким образом кредит будет погашен досрочно за 10 месяцев. Для этого оплату в банк необходимо производить двумя чеками: первый чек - очередная оплата по графику платежей кредита, второй чек - это частично-досрочное погашение. После оплаты, фотографию или отсканированный вариант этих чеков прикрепляете в личном кабинете в разделе "Мои долги" для отчета перед менеджерами программы "Закрой кредит"..</p>
+                    <iframe width="720" height="405" src="https://www.youtube.com/embed/q_lo5l3Q-ME" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </td>
+                </tr>
+              </table>
+            <a style="padding: 4px"></a>
+        </section>
+        <section class="container-fluid" id="Kurga">
+              <table align="center" id="lol">
+                <tr>
+                  <td id="amaga" align="center">    
+                    <img src="car.png" alt="" style="text-align: left; border-radius: 10px;width: 350px;padding-left: 1em;">
+                  </td>
+                  <td id="natpis">
+                    <a style="font-size: 1.6em;text-decoration: none;color: #554E8A;font-weight: bold;top:10px; a:href{text-decoration:none;cursor: auto;}">4. Продукт "AT35" и "KV35"</a>
+                    <p style="margin-top: 1em;">Данные программы позволяют приобрести автомобиль или недвижимость за 35% от стоимости </p>
+                    <p>КАК это работает ? </p>
+                    <p><a>1 шаг. </a><a href="https://thefiniko.com/r/174173" target="_blank"class="links">Регистрируетесь в Финико</a>, оформляете профиль и отправляете данные на верификацию<a href="https://www.youtube.com/watch?v=snHtzawsAC4" target="_blank"class="links">(инструкция)</a>   </p>
+                    <p ><a >2 шаг.</a> Выбираете авто или недвижимость</a></p>
+                    <p ><a >3 шаг.</a> Заключаете договор с компанией «Финико»</p>
+                    <p ><a >4 шаг.</a> Вносите в компанию 35% +1% (офисный сбор) + 165$ (за обслуживание по договору).</p>
+                    <p ><a >5 шаг.</a> Через 120 календарных дней вы получите две суммы: 1 - сумма налога на доход (13% от 650 000), 2 - общая сумма стоимости авто или недвижимости.</p>
+                    <p><a>Пример:</a></p>
+                    <p>Выбрали авто стоимостью 1 000 000. Внесли 350 000 + 10 000 (1% офисный сбор) + 165$ (за обслуживание).  В личном кабинете вы увидите дату получения денег, Через 120 календарных дней на кошелек начисляется сумма на покупку автомобиля или недвижимости. С этого дня, в течении 30 календарных дней вам будет необходимо выбрать авто или недвижимость, приобрести и зарегистрировать на свое имя. Также в личном кабинете необходимо подтвердить покупку правообладающими документами на автомобиль или недвижимость.</p>
+                    <p>Компанией учитывается сумма налога с вашего дохода по данной программе. Эта сумма налога (для России - 13% от суммы дохода, для всех остальных стран - 15% от суммы дохода) начисляется компанией и будет доступна к снятию с вашего кошелька в личном кабинете в следующем году (в период срока для оплаты налога по законодательству вашей страны).</p>
+                    <p>
+                      В личном кабинете появится раздел "Налоги" (с подробными инструкциями как оплатить налог).
+                    </p>
+                    <iframe width="720" height="405" src="https://www.youtube.com/embed/ggi4EnlJ0EE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="720" height="405" src="https://www.youtube.com/embed/amVBNcH_baI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </td>
+                </tr>
+              </table>
+            <a style="padding: 4px"></a>
+        </section>
+        <section class="container-fluid" id="Kurga">
+              <table align="center" id="lol">
+                <tr>
+                  <td id="amaga" align="center">    
+                    <img src="life.png" alt="" style="text-align: left; border-radius: 10px;width: 350px;padding-left: 1em;">
+                  </td>
+                  <td id="natpis">
+                    <a style="font-size: 1.6em;text-decoration: none;color: #554E8A;font-weight: bold;top:10px; a:href{text-decoration:none;cursor: auto;}">5. Программа "FINIKO.LIFE"</a>
+                    <p style="margin-top: 1em;">У каждого из нас найдутся дела, которые требуют периодических финансовых вложений: ЖКХ, аренда квартиры, офиса, обучение, детский сад, лечение, ремонт, хобби и т.д. </p>
+                    <p>В этом ролике Кирилл Доронин рассказывает, как с помощью продукта Finiko.Life на платформе <a href="https://thefiniko.com/r/174173" target="_blank"id = "tinkof"style="font-weight: normal;color:#C58BE7;">thefiniko.com</a>  можно забыть об этих постоянных взносах. </p>
+                    <p>Также, Кирилл рассказывает механику работы системы, где с Вас потребуется только установить свои условия и внести одноразовый платеж: </p>
+                    <p >- Итоговая сумма за год;</p>
+                    <p >- Периодичность платежей (раз в неделю, месяц, квартал, полгода и год).</p>
+                    <p ><a >Пример:</a></p>
+                    <p >Рассмотрим пример на аренде квартиры. Условно расходы за год на аренду квартиры составят 240 000 рублей (20 000р * 12 месяцев). Далее выбираем желаемую периодичность платежей - раз в неделю, месяц, квартал, полгода или год.</p>
+                    <p>При внесении этих исходных данных, система сама рассчитает сумму единоразового взноса. Коэффициент расчета зависит от выбранной периодичности выплат и составляет:</p>
+                    <p>раз в неделю - 1.8</p>
+                    <p>раз в месяц - 2.4</p>
+                    <p>раз в 3 месяца  - 3.0</p>
+                    <p>раз в 6 месяцев - 3.6</p>
+                    <p>раз в 12 месяцев - 4.8</p>
+                    <p>
+                      В нашем случае, если у нас годовая сумма расхода на аренду квартиры 240 000 рублей, и периодичность выплат 1 раз в месяц, то необходимая сумма взноса составит 100 000 рублей. Таким образом, с помощью данного продукта FINIKO.LIFE мы сэкономим 140 000 рублей.
+                    </p>
+                    <iframe width="720" height="405" src="https://www.youtube.com/embed/GfAnRXgFF2A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </td>
+                </tr>
+              </table>
+            <a style="padding: 4px"></a>
+        </section>
+        <section class="container-fluid" id="Kurga">
+              <table align="center" id="lol">
+                <tr>
+                  <td id="amaga" align="center">    
+                    <img src="apple.png" alt="" style="text-align: left; border-radius: 10px;width: 350px;padding-left: 1em;">
+                  </td>
+                  <td id="natpis">
+                    <a style="font-size: 1.6em;text-decoration: none;color: #554E8A;font-weight: bold;top:10px; a:href{text-decoration:none;cursor: auto;}">6. Программа "FINIKO.PRODUCT"</a>
+                    <p style="margin-top: 1em;">Вспомните, есть ли у вас вещь, которую вы хотели бы приобрести, но цена «кусается»?  </p>
+                    <p>Программа Finiko.Product позволяет не только реализовать покупку любой желаемой вещи, цена на которую для вас является неподъемной, но и сэкономить до 70% от стоимости. </p>
+                    <p>Вы сами определяете сумму, которую вы можете потратить и скорость получения 100% стоимости вещи.</p>
+                    <p >Варианты взносов:</p>
+                    <p >50% - получение всей суммы через 4 месяца</p>
+                    <p >40% - получение всей суммы через 5 месяцев</p>
+                    <p >30% - получение всей суммы через 7 месяцев.</p>
+                    <iframe width="720" height="405" src="https://www.youtube.com/embed/8g4T3FJc5Ys" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </td>
+                </tr>
+              </table>
+            <a style="padding: 4px"></a>
+        </section>
+        <section class="container-fluid" id="Kurga">
+              <table align="center" id="lol">
+                <tr>
+                  <td id="amaga" align="center">    
+                    <img src="buisnes.png" alt="" style="text-align: left; border-radius: 10px;width: 350px;padding-left: 1em;">
+                  </td>
+                  <td id="natpis">
+                    <a style="font-size: 1.6em;text-decoration: none;color: #554E8A;font-weight: bold;top:10px; a:href{text-decoration:none;cursor: auto;}">7. Предложение предпринимателям</a>
+                    <p style="margin-top: 1em;">Уважаемые предприниматели!</p>
+                    <p>Сэкономить - значит больше заработать, не так ли?</p>
+                    <p>Узнайте, как с помощью платформы FINIKO можно сократить:</p>
+                    <p >- Оплату труда Ваших сотрудников без урона для самих сотрудников и для Вас;</p>
+                    <p >- Оплату любых текущих платежей (налоги, аренда офиса, лизинговые платежи, программное обеспечение, транспортные расходы, складские расходы итд).</p>
+                    <p >Если предложение показалось Вам интересным, заявку на сотрудничество можно оставить по моим нижеприведенным контактам. </p>
+                    <iframe style="margin-bottom: 10px;" width="720" height="405" src="https://www.youtube.com/embed/gHqPvpFmAIQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </td>
+                </tr>
+              </table>
+            <a style="padding: 4px"></a>
+        </section>
+        <section class="container-fluid" id="kle">
+          <table align="center" width="1144" >
+            <tr>
+              <td>
+                <div align="center"alt="" style="border-radius: 20px;width: 100%; box-shadow: 0px 7px 3px 1px #B0B0B0;background-image: url(bgshka.png);background-repeat: no-repeat;background-size: cover; height: 100%;">
+                <table align="center"width="400" style="background-color: #E2F3F2;border-radius: 10px;height: 100vh; text-align: center;">
+                  <tr>
+                    <td style="padding: 30px;">
+                      <p style="font-size: 1.4em;font-weight: bold;"> 
+                        Калькулятор расчета 35% по программам <a style="color: #0054A5;">FINIKO</a>
+                      </p>
+                      <p style="text-align: left;color: #595D5C;font-weight: bold;width: 90%;">
+                        Выберите программу для расчета из списка <br>
+                        <a>*</a>
+                      </p>
+                      <select id="variant"style="width: 100%;height: 100%;font-size:1.5em;padding: 10px;color: #8F7F7F;" align="justify-content-center">
+                        <option></option>
+                        <option>Недвижимость</option>
+                        <option>Автомобиль</option>
+                        <option>Долги</option>
+                      </select>
+                      <p>
+                        <p align="center" style="text-align: left;color: #595D5C;font-weight: bold; width:100%;">
+                         Напишите стоимость в рублях<br>
+                        <a>недвижимости, авто или остатка долга * </a>
+                        </p>
+                      </p>
+                      <input type="number" name=""style="width: 100%;height: 100%;font-size:1.5em;padding: 7px;color: #8F7F7F;" align="justify-content-center">
+                      <input type="text"> oninput: <span id="result"></span>
+                    </td>
+                  </tr>
+                </table>
+              </div>  
+              </td>
+            </tr>
+          </table>
+                        
+          <a style="padding: 9px"></a>
+        </section> 
+        <section class="container-fluid" style="margin-top: 0" style="height: 100%;">
+          <div class="conteiner">
+            <p id= "ohu">Источники и распределение прибыли компании Finiko :</p>
+              <img src="Ohg.png" alt="">            
+          </div>
+        </section>    
+        <section class="container-fluid" style="margin-top: 30px ;background-color:#790C2A;height: 100%;padding: 20px;" id="mda">
+          <table align="center">
+            <tr>
+              <td>
+                <p>ВНИМАНИЕ: В ближайшее время компанией Финико будет внедрена программа Кредитования партнеров. </p>
+                <p>Если у вас испорченная кредитная история, или по каким либо другим причинам банки вам не одобряют кредит, то Финико дает возможность создать вашу кредитную историю с нуля в Финико. </p>
+                <p>Программа кредитования будет работать по системе Р2Р кредитования ("person-to-person кредитование"), где Финико будет выступать гарантом сделки! </p>
+                <p>Успевайте регистрироваться в Finiko ! </p> 
+              </td>
+            </tr>
+          </table>
+        </section>  
+        <section class="container-fluid" id="otzivi">
+            <p ><a name="otziviki"></a>Видео-отзывы партнеров Finiko:</p>
+            <table align="center">
+              <tr>
+                <td class="movie">
+                  <iframe width="480" height="270" src="https://www.youtube.com/embed/3JGyYckM42M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </td>
+                <td>
+                  <iframe width="480" height="270" src="https://www.youtube.com/embed/gJuBm2wGaPM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <iframe width="480" height="270" src="https://www.youtube.com/embed/_9ZzeDjyJJk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </td>
+                <td>
+                  <iframe width="480" height="270" src="https://www.youtube.com/embed/Wt0WTZHKBNE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </td>
+              </tr>
+            </table>
+            <div style="margin-top: 20px;">
+              <a href="https://thefiniko.com/r/174173" target="_blank">
+                  <button id="Regist">
+                    Регистрация в FINIKO
+                  </button>
+                </a><br/>
+                <a href="https://www.youtube.com/channel/UCISLXzG0BYRTjx9hlZ_suzg?sub_confirmation=1" target="_blank">
+                  <button id="more">
+                    Больше отзывов на официальном
+                      youtube-канале FINIKO 
+                  </button>
+                </a>              
+            </div>
+        </section>   
+        <section  class="container-fluid" id="otveti">
+            <p><a name="otvetinavoprosi"></a>Ответы на часто задаваемые вопросы :</p>
+            <table align="center" id="mho"> 
+              <tr>
+                <td>
+                <div id="accordion">
+                <button type="button" class="accordion__button">История создания компании FINIKO и сколько лет существует на рынке?</button>
+                <div class="accordion__content">
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     Рождение компании Finiko началось с того, что создатель компании Кирилл Доронин, имея потребность найти актуальную сферу деятельности, где можно создать финансовый капитал, познакомился с командой талантливых трейдеров! С их помощью он начал приумножать свой капитал и делать это с большим успехом. Его друзья, увидев результаты стали просить взять их деньги в управление, а чуть позже друзья друзей. Так и появилась идея создать платформу, с помощью которой каждый желающий мог бы дать свои средства в управление профессионалам.
+                   </p>
+                  <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">На данный момент компания в стадии развития и расширения, в ней работает штат трейдеров,   каждый из которых торгует одним рыночным инструментом. За счет того, что все они торгуют на разных инструментах, это позволяет диверсифицировать риски и всегда торговать только в плюс делая в среднем +50-60% к депозиту в месяц. Да, звучит не реально, но это действительно возможно на определенных рыночных инструментах.
+                  </p>
+                  <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                      Имея благие намерения, компания придумала интересный маркетинговый ход, чтобы как можно больше капитализировать средств в свое управление. На сегодняшний день, основная потребность людей в том, чтобы закрыть кредиты, ипотеки, купить хорошую машину, квартиру, дом. И компания "Финико" помогает своим клиентам решать эти вопросы достаточно быстро, а взамен получает благодарных клиентов и увеличение капитализации, и как следствие рост доходности.
+                  </p>
+                  <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                    в 2017 году, являясь отдельными индивидуальными предпринимателями, ребята начали тестить данную возможность на своем близком окружении и в 2019 году приступили к работе официально для всех желающих.
+                  </p> 
+                </div>
+              </div>
+                </td>
+              </tr>
+               <tr>
+                <td>
+                <div id="accordion">
+                <button type="button" class="accordion__button">Где можно посмотреть документы?</button>
+                <div class="accordion__content">
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     Документы компании вы можете посмотреть на официальном сайте - в личном кабинете в разделе «Документы».Также они представлены на данном сайте, в разделе «Документы».
+                   </p>
+                </div>
+              </div>
+                </td>
+              </tr>
+               <tr>
+                <td>
+                <div id="accordion">
+                <button type="button" class="accordion__button">Что такое цифроны ?</button>
+                <div class="accordion__content">
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     Цифроны - это единица расчета внутри нашего сайта, внутренняя валюта.  1 цифрон равен 1$
+                   </p>
+                </div>
+              </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                <div id="accordion">
+                <button type="button" class="accordion__button">«Финико» - очередная пирамида ?</button>
+                <div class="accordion__content">
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     Это не очередная пирамида, это вообще не пирамида. Потому что мы умеем зарабатывать деньги и мы работаем в абсолютно легальном поле.
+                   </p>
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     Зачем нам строить пирамиду, если мы умеем хорошо зарабатывать на фондовом рынке? Если к нам пришло 3 партнера, то мы работаем с 3 партнерами, если 30 000 партнеров, то с 30 000 партнерами, наше умение зарабатывать деньги абсолютно не зависит от притока новых партнеров.
+                   </p>
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                      Убедиться в профессионализме наших трейдеров вы можете просмотрев ролики с онлайн-торгами наших трейдеров, также можете открыть счет на любой бирже и дать нам доступ на управление на 1 неделю, за этот период вы действительно убедитесь в том, что мы умеем зарабатывать.
+                   </p>
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     Справочно: у нас на август 2020г. – более 55 штатных трейдеров.
+                   </p>
+                </div>
+              </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                <div id="accordion">
+                <button type="button" class="accordion__button">Есть ли риски и какие гарантии?</button>
+                <div class="accordion__content">
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     Мы обеспечиваем минимизацию рисков! Трейдеры используют несколько десятков инструментов при торговле на биржевом рынке, тем самым обеспечивая безопасность инвестирования ваших денег. Если один инструмент принесет убыток, то он компенсируется за счёт прибыли других инструментов. Множество инструментов не могут уйти в минус одновременно. Деньги клиента всегда находятся в безопасности.
+                   </p>
+                  <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                    А также, каждый трейдер оставляет 25 % своего заработка на рабочем счете. При неудачной сделке, убытки понесёт он, а не компания или инвесторы.
+                   </p>
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     Максимальный риск просадки (уменьшение в результате убыточных торгов), который может допустить трейдер, — 1,5% в день, в этом случае срабатывает система безопасности и торги в этот день автоматически прекращаются на этом инструменте!
+                   </p>
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     Мы не ищем гарантии, мы их создаем:
+                   </p>
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     1. Обеспечиваем диверсификацию (минимизацию) рисков, за счет множества инструментов генерации прибыли (к сентябрю 2020 года количество инструментов торговли на биржах составляет около пятидесяти)
+                   </p>
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                    2. Внедрили автоматическую систему безопасности, которая блокирует убыточные сделки.
+                   </p>
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     3. Часть прибыли - 40 % уходит в резервный фонд, поэтому всегда существует возможность выплаты из резервного фонда!
+                   </p>
+                </div>
+              </div>
+                </td>
+              </tr>
+               <tr>
+                <td>
+                <div id="accordion">
+                <button type="button" class="accordion__button">Сколько филиалов в России у компании «Финико»??</button>
+                <div class="accordion__content">
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     У нас есть партнеры, которые открыли собственные офисы. Это партнеры, которые занимаются обучением других людей, которым интересен сайт «Финико» и его закономерности.
+                   </p>
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     На сегодняшний день офисы уже открыты в таких городах как Москва, Санкт-Петербург, Казань, Нижний Новгород, Волгоград, Сочи, Тольяти, Владивосток, Уфа, Ярославль, Саратов, Симферополь, Оренбург и во многих других.
+                   </p>
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;" >
+                     Партнеры также представлены за рубежом: Казахстан, Узбекистан, Болгария, Украина, Южная Корея.
+                   </p>
+                </div>
+              </div>
+                </td>
+              </tr>
+               <tr>
+                <td>
+                <div id="accordion">
+                <button type="button" class="accordion__button">Как начать зарабатывать без первого взноса?</button>
+                <div class="accordion__content">
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     У нас есть продукты «Закрытие кредитов», «Покупка машин и квартир», «Кэшбек-сервис», "Финико-Продукт", "Финико-лайф". Если вы порекомендуете эти продукты, и люди воспользуются вашей рекомендацией, то вы заработаете первые деньги. Регистрация в компании бесплатная, то есть у нас нет такого, что обязательно какой-то взнос надо делать.
+                   </p>
+                </div>
+              </div>
+                </td>
+              </tr>
+             <tr>
+                <td>
+                <div id="accordion">
+                <button type="button" class="accordion__button">Зачем вам себя рекламировать, вы и так умеете зарабатывать деньги, и их у вас много.</button>
+                <div class="accordion__content">
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     У нас есть очень большая цель, которую мы неоднократно озвучивали на семинарах и вебинарах. Финико – это пространство, на котором мы должны научиться зарабатывать, наша цель – это создать пространство для стартапов. Мы заинтересованы в рынках 30,40,50х годов.  Мы очень верим в биотехнологии, нам очень хочется создать какие-то стартапы в области продления человеческой жизни. И будет круто, если это появится у нас. 
+                   </p>
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     Поэтому мы создаем капитализацию компании, из капитализации компании, на доход от капитала – наша задача - финансировать и довести продукт до ума.
+                   </p>
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     То есть для нас это вопрос тренировки с большим количеством денег, большой системой генерации прибыли, так, чтобы эти продукты появились на 30-ые, 40-ые, 50-ые годы.
+                   </p>
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     И для создания всей этой системы нам очень важно сформировать аудиторию лояльных партнеров-пользователей.
+                   </p>
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                    Для нас инструмент Финико это:
+                   </p>
+                   <ul>
+                     <li style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%; font-size: 2em;">
+                       Инструмент получения генерации капитала.
+                     </li>
+                     <li style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%; font-size: 2em;">
+                       Генерация лояльной аудитории, способной продавать не только финансовые продукты, но и имеющее отношение к репутации.
+                     </li>
+                     <li style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%; font-size: 2em;">
+                       Умение работать с будущими затратами, которые еще не известно сколько понадобится для того, чтобы появился новый продукт. Эти продукты должны быть 100% прорывные, конкурентоспособные в мировом порядке.
+                     </li>
+                   </ul>
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     Именно поэтому мы работаем плавно, плавно осваиваем капитал, и наша задача сейчас – часть денег, заработанных, уже начать вкладывать в развитие других проектов.
+                   </p>
+                </div>
+              </div>
+                </td>
+              </tr>
+               <tr>
+                <td>
+                <div id="accordion">
+                <button type="button" class="accordion__button">Обязательно ли я должен приглашать людей в «Финико»?</button>
+                <div class="accordion__content">
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     Нет. Все зависит от тебя самого, от твоих амбиций. Ты можешь решать только свои финансовые задачи с помощью продуктов «Финико», или также параллельно можешь помогать (рекомендовать, приглашать) своему окружению решать их задачи, при этом можешь хорошо дополнительно зарабатывать по реферальной программе.  Выбор за тобой, никаких требований по приглашениям в «Финико» - у нас нет.
+                   </p>
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                      PS: Многие партнеры, не имеющие стартового капитала для начала сотрудничества с «Финико», начинают именно с рекомендаций, таким образом, с заработанных денег они начинают решать свои задачи с помощью продуктов «Финико».
+                   </p>
+                </div>
+              </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                <div id="accordion">
+                <button type="button" class="accordion__button">Если вы можете заработать без прихода новых партнеров, зачем вам реферальная система? Ведь люди и так будут приходить на «легкие» деньги.</button>
+                <div class="accordion__content">
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     Во первых, это отнюдь не «легкие» деньги, это работа высококвалифицированная и интеллектуальная.
+                   </p>
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                      Во вторых, мы формируем сбытовую сеть под будущие продукты.
+                   </p>
+                </div>
+              </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                <div id="accordion">
+                <button type="button" class="accordion__button">Как в «Финико» устроено наследование? Можно ли ввести сведения по выгодоприобретателю? Какой срок и вообще, все как урегулировано?</button>
+                <div class="accordion__content">
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     В личном кабинете есть раздел "Наследник", где вы указываете фамилию имя отчество, номер телефона и электронную почту, для связи в случае наступления плохого события.
+                   </p>
+                </div>
+              </div>
+                </td>
+              </tr>
+             <tr>
+                <td>
+                <div id="accordion">
+                <button type="button" class="accordion__button">Если я не гражданин России, могу я участвовать в «Финико», я должен платить налоги в России? Какие документы от меня потребуются?</button>
+                <div class="accordion__content">
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     Если вы не гражданин России, то вы можете участвовать в «Финико», поскольку компания международная и наша документация позволяет работать в любой стране. За исключением некоторых нюансов, например если нет пока ни одного партнера в вашей стране. В таком случае свяжитесь с нами через службу поддержки, и мы выясним юридические вопросы на счет работы в вашей стране. На пару-тройку партнеров мы отработаем юридическую модель и дальше будет происходить масштабирование.
+                   </p>
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     По налогам, вы платите налог в стране проживания.
+                   </p>
+                </div>
+              </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                <div id="accordion">
+                <button type="button" class="accordion__button">Как мне пригласить партнера, где взять реферальную ссылку? Какие от этого плюсы и сколько можно на этом заработать?</button>
+                <div class="accordion__content">
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                    Реферальные ссылку можно взять в личном кабинете, раздел «Партнерка».
+                   </p>
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     Плюсы – вы заработаете реферальное вознаграждение в размере 5% от суммы сделки плюс ежемесячно по 1% от суммы сделки (кроме индексов), также при активных приглашениях на продукт «Индекс CTI» вы сможете увеличить свой доход.
+                   </p>
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     За более подробной информацией обратитесь к вашему рекомендателю (спонсору).   
+                   </p>
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                      Также периодически проходят промо-акции, где вы сможете выиграть ценные призы, в том числе автомобиль, квартиру.  
+                   </p>
+                </div>
+              </div>
+                </td>
+              </tr>
+               <tr>
+                <td>
+                <div id="accordion">
+                <button type="button" class="accordion__button">В какие сроки я могу вывести доход от индексов и стоимость самого индекса?</button>
+                <div class="accordion__content">
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     Доход от индекса – на 3й рабочий день, стоимость самого индекса – на 21й рабочий день.
+                   </p>
+                </div>
+              </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                <div id="accordion">
+                <button type="button" class="accordion__button">Как работают мои финансы в рамках продукта «Индекс CTI»?</button>
+                <div class="accordion__content">
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     В рамках индекса все денежные средства распределяются на более чем 70 инструментов, которые в дальнейшем отдаются в работу разным штатным трейдерам. Торговля ежедневная, кроме выходных и праздников. 30% от депозита уходят на внутридневную торговлю (короткие сделки),  30% уходят на позиционную торговлю, 40% остается на резерв (как страховка для выравнивания, если это будет необходимо).
+                   </p>
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     У каждого трейдера максимальный стоп за день – 1,5% от депозита (если стоп фиксированный), а просадка рассчитывается трейдером самостоятельно, если он заработал подушку (есть уже определенная прибыль на том счету, которым управляет трейдер), то есть он может в этом случае рискнуть за свой счет.  
+                   </p>
+                </div>
+              </div>
+                </td>
+              </tr>
+               <tr>
+                <td>
+                <div id="accordion">
+                <button type="button" class="accordion__button">Можно ли у вас обучиться трейдингу с нулевыми знаниями по трейдингу?</button>
+                <div class="accordion__content">
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     Да, это возможно. Мы сейчас проводим онлайн-обучения по трейдингу. На обучение берем только после собеседования. Обучение бесплатное и длится от 1 до 3 месяцев.  Бесплатное потому, что мы хотим увеличить количество трейдеров, чтобы минимизировать риски, также собрать одну из лучших команд.  
+                   </p>
+                </div>
+              </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                <div id="accordion">
+                <button type="button" class="accordion__button">Обязательно ли я должен заплатить налог на доход в размере 13%?</button>
+                <div class="accordion__content">
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     Да, уплата налога на доход в размере 13% является обязательным условием компании, сумму налога для вас зарабатывает компания.
+                   </p >
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     В данное время в личном кабинете интегрирована уплата налога по продуктам покупки авто и недвижимости.
+                   </p>
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                      Инструкции по уплате налога спрашивайте у вашего рекомендателя (спонсора).
+                   </p>
+                </div>
+              </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                <div id="accordion">
+                <button type="button" class="accordion__button">Что будет, если я получу деньги за авто или недвижимость, и не предоставлю отчет?</button>
+                <div class="accordion__content">
+                   <p style="text-align: left; color: #33334C;margin: 0;padding: 4px;width: 90%;">
+                     У вас есть 30 календарных дней, (после начисления 100% стоимости авто или надвижимости в личном кабинете), для предоставления правоподтверждающих документов на авто или недвижимость. В случае не предоставления документов за указанный срок  - ваш аккаунт блокируется.
+                   </p>
+                </div>
+              </div><p style="padding: 30px;"></p>
+                </td>
+              </tr>     
+          </table>
+        </section>
+        <section class="container-fluid" id="doki">
+              <a name="Dokuments" style="color: #1D1363;font-size: 2.5em;">Документы Finiko:</a>
+              <table align="center">
+                <tr>
+                  <td>
+                    <a href="https://thefiniko.com/documents/company_registration.pdf" target="_blank">
+                      <button>
+                        Регистрация компании
+                      </button>                      
+                    </a>
+
+                  </td>
+                  <td>
+                    <a href="https://thefiniko.com/documents/extract_from_the_register.pdf" target="_blank">
+                      <button>
+                        Выписка из регистра
+                      </button>                   
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://thefiniko.com/documents/company_charter_in_english.pdf" target="_blank">
+                      <button>
+                        Устав компании на английском языке
+                      </button>                      
+                    </a>
+
+                  </td>
+                  <td>
+                    <a href="https://thefiniko.com/documents/license_information.pdf" target="_blank"> 
+                    <button>
+                      Информация о лицензиях
+                    </button></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <img src="Svidetelstvo.jpg">
+                  </td>
+                  <td>
+                    
+                  </td>
+                </tr>
+              </table>
+              <table id="sho" align="center">
+                <tr>
+                  <td>
+                    <a style="font-weight: bold;">
+                      ГЛАВНЫЙ ОФИС В РОССИИ
+                    </a>
+                  </td>
+                  <td>
+                    <a style="font-weight: bold;">ОФИСЫ ПАРТНЕРОВ КОМПАНИИ  "ФИНИКО"</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="tolkatk">
+                      Россия, Республика Татарстан, г.Казань, Московская 19/8
+                    </p>
+                    <p>
+                      ВРЕМЯ РАБОТЫ
+                    </p>
+                    <p>
+                      Пн-Пт: 09:00-21:00
+                    </p>
+                    <p>
+                      Сб: 09:00-17:00
+                    </p>
+                    <p>
+                      ________________
+                    </p>
+                    <p>
+                      Cyfron FNK LTD (2020-00094)
+                    </p>
+                    <p>
+                      Rodney Bayside Building, Rodney Bay, Gros-lslet, Saint Lusia.
+                    </p>                    
+                  </td>
+                  <td>
+                    <p class="tolkatk" style="color: #1D137A">
+                      *Россия
+                    </p>
+                    <p style="color: #1D137A;">
+                      *Китай (КНР)
+                    </p>
+                    <p style="color: #1D137A;">
+                      *Казахстан
+                    </p>
+                    <p style="color: #1D137A;">
+                      *Белоруссия (Беларусь)
+                    </p>
+                    <p style="color: #1D137A;">*Кыргызстан</p>
+                    <p style="color: #1D137A;">
+                      *Армения
+                    </p>
+                    <p style="color: #1D137A;">
+                      *Турция
+                    </p>
+                    <p style="color: #1D137A;">
+                      *Узбекистан
+                    </p>
+                    <p style="color: #1D137A;">
+                      *Чехия
+                    </p>
+                    <p style="color: #1D137A;">
+                      *Южная Корея 
+                    </p>
+                    <p style="color: #1D137A;">
+                      *Монголия
+                    </p>
+                    <p style="color: #1D137A;">
+                      *ОАЭ
+                    </p>
+                  </td>
+                </tr>
+              </table>
+              <a href="https://thefiniko.com/r/174173" target="_blank">
+              <button style="margin-top: 100px;background-color: #E25440; padding: 5px;height: 100%;border:1px solid #E25440; font-size: 1.8em;padding-right: 20px; padding-left: 20px;">
+                Регистрация
+              </button> 
+              </a>
+              <p style="color: #33334B; font-size: 1.2em;padding: 0px;margin-top: 50px; font-weight: bold;">
+                Напиши мне, чтобы узнать подробнее о компании FINIKO:
+              </p>
+              <p style="color: #33334B; font-size: 1.2em;padding: 0px;font-weight: bold;"><a name="kontaktiki"></a>
+                МОИ КОНТАКТЫ - Рафис Латыпов:
+              </p>
+              <table width="400" align="center" id="kotaktis">
+                <tr>
+                  <td>
+                    <img src="photo_2020-12-04_10-36-44.png" alt="" height="200" style="border-radius: 100px;">
+                  </td>
+                  <td>
+                    <p style="color: black;font-size: 2em;">
+                      +79876232312
+                    </p>
+                    <p>
+                      <a class="omg" href="https://wa.me/+79876232312" target="_blank"><img src="whatsapp.png" alt="" width="75" style="border-radius: 100px;"></a>
+                      <a class="omg" href="https://t.me/RafisLatypov" target="_blank"><img src="telegram.png" alt=""  width="70" style="border-radius: 100px;"></a>
+                      <a class="omg" href="https://instagram.com/latypov_rafis?igshid=1pxt914sb4pg2" target="_blank"><img src="instagram.png" alt="" width="70" style="border-radius: 100px;"></a>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://apps.apple.com/us/app/finiko/id1511754330?l=ru&ls=1" target="_blank"><img height="80" src="22890831e3754f68312c27edc74de1b9.png" alt="" style="background-color:black;border-radius: 10px; padding: 10px;padding-left: 20px;padding-right: 20px;"></a>
+                  </td>
+                  <td>
+                    <a href="https://play.google.com/store/apps/details?id=ru.finiko" target="_blank"><img height="80"src="3d9e03cdd34df94d1abc881ee111817a.png" alt="" style="background-color:black;border-radius: 10px; padding: 10px;padding-left: 20px;padding-right: 20px;"></a>
+                  </td>
+                </tr>
+              </table>
+              <p style="padding: 5px;"></p>
+        </section>
+        <section class="container-fluid" id="footer">
+          <table width="1144" align="center">
+            <tr>
+              <td style="display: inline-box;display: inline-block;vertical-align: bottom;">
+                <img src="325235.png" alt="" style="margin-right: 40px;">
+                <a style="color: white;font-size: 0.8em; font-weight:bold;">FINIKO</a>
+              </td>
+              <td style="padding-left: 50px;">
+                <a href="#history"><button>История FINIKO</button></a>
+                <a href="#Programs"><button>Программы</button></a>
+                <a href="#otzivi"><button>Отзывы</button></a>
+                <a href="#kontaktiki"><button>Мои контакты</button></a>
+              </td>
+            </tr>
+          </table>
+          <p style="margin: 10px;"></p>
+        </section>
+<!--=------------------------------------------------------------------------------------------------->
+        <script>
+          document.querySelectorAll('.accordion__button').forEach(button => {
+              button.addEventListener('click',() =>{
+                  const accordionContent = button.nextElementSibling;
+
+                  button.classList.toggle('accordion__button--active');
+
+                  if(button.classList.contains('accordion__button--active'))
+                  {
+                    accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+                  }
+                  else
+                  {
+                    accordionContent.style.maxHeight = 0;
+                  }
+              });  
+          });
+          var input = document.body.children[0];
+
+          input.oninput = function() {
+          document.getElementById('result').innerHTML = input.value;
+       };
+     </script>
+    </body>
+</html>
